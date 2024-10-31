@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket - Database Listener</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header">
+            <h1>WebSocket - Database Listener</h1>
+            <h2>Your ID: <span id="ws-id"></span></h2>
+        </div>
+        <form class="input-container" action="" onsubmit="sendMessage(event)">
+            <input type="text" id="messageText" autocomplete="off" placeholder="Type your message..."/>
+            <button type="submit">Send</button>
+        </form>
+        <div class="messages">
+            <ul id="messages"></ul>
+        </div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
