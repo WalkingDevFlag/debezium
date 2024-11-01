@@ -28,8 +28,8 @@ This application is a WebSocket-based FastAPI project that listens for real-time
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/AndrGab/debezium-tester-app.git
-   cd debezium-tester-app
+   git clone https://github.com/AndrGab/debezium.git
+   cd debezium
    ```
 
 2. **Build and Run the Containers**:
