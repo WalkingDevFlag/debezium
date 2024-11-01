@@ -90,7 +90,7 @@ ALTER TABLE super_heroes REPLICA IDENTITY FULL;
 
 ### 4. Create the Debezium Source Connector
 
-Use a POST request to create a source connector for the `super_heroes` table. You can use [Bruno](https://usebruno.com) or another API client to send the following JSON configuration:
+Use a POST request (0.0.0.0:8083/connectors) to create a source connector for the `super_heroes` table. You can use [Bruno](https://usebruno.com) or another API client to send the following JSON configuration:
 
 ```json
 {
