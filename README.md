@@ -51,6 +51,8 @@ To enable logical replication, set the PostgreSQL Write-Ahead Logging (WAL) leve
 ALTER SYSTEM SET wal_level = logical;
 ```
 
+**Restart the database contains after system changes**
+
 Verify the WAL level:
 
 ```sql
