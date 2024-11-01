@@ -1,0 +1,47 @@
+output-format = "grouped"
+lint.select = [
+    "E",
+    "W",
+    "F",
+    "COM",
+    "C4",
+    "Q",
+    "SIM",
+    "I",
+    "UP",
+    "S",
+]
+exclude = [
+    ".direnv",
+    ".git",
+    ".git-rewrite",
+    ".mypy_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "venv",
+]
+lint.ignore = [
+    "COM812",
+]
+line-length = 140
+target-version = "py311"
+lint.extend-ignore = ['PLR0913']
+indent-width = 4
+
+[format]
+quote-style = "single"
+indent-style = "space"
+docstring-code-format = true
+
+[lint.flake8-quotes]
+docstring-quotes = "double"
+inline-quotes = "single"
+multiline-quotes = "double"
+
+[lint.per-file-ignores]
+'__init__.py' = ['F401']
+'tests/*' = ['S101', 'S104', 'S105', 'S311', 'PLR2004']
+

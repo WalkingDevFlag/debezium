@@ -1,11 +1,18 @@
 [project]
-name = "debezium"
+name = "debezium_tester_app"
 version = "0.1.0"
-description = "Add your description here"
+description = "Test application for Debezium CDC"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "aiokafka>=0.12.0",
     "fastapi[standard]>=0.115.4",
+    "pydantic-settings>=2.6.0",
     "ruff>=0.7.1",
+    "tomli>=2.0.2",
 ]
+
+[contact]
+name = "Andre Gabriel"
+url = "https://github.com/andrgab"
+email = "andrgab@gmail.com"
