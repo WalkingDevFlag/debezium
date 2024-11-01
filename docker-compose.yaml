@@ -1,5 +1,22 @@
 version: '3'
 services:
+  debezium_tester_app:
+    image: debezium_tester_app
+    container_name: debezium_tester_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:80"
+    networks:
+      - debezium-compose-network
+    depends_on:
+      - connect-debezium
+      - zookeeper-debezium
+      - kafka-debezium
+      - tester_db
+
+
   zookeeper-debezium:
     image: debezium/zookeeper:1.4
     container_name: zookeeper-debezium
@@ -41,18 +58,17 @@ services:
     networks:
       - debezium-compose-network
 
-  teste-postgres-compose:
+  tester_db:
     image: postgres
-    hostname: postgres-pipeline
-    container_name: postgres-pipeline
+    hostname: tester_db
+    container_name: tester_db
     shm_size: 4gb
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
       - "5432:5432"
-    volumes:
-      - /home/docker/postgres/db:/var/lib/postgresql/data 
+
     networks:
       - debezium-compose-network
 

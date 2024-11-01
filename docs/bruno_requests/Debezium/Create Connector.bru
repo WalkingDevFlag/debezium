@@ -1,0 +1,30 @@
+meta {
+  name: Create Connector
+  type: http
+  seq: 3
+}
+
+post {
+  url: 0.0.0.0:8083/connectors
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+     "name": "source-connector-super-heroes",
+     "config": {
+         "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+         "database.hostname": "tester_db",
+         "database.port": "5432",
+         "database.user": "postgres",
+         "database.password": "postgres",
+         "database.dbname": "postgres",
+         "database.server.name": "postgres",
+         "table.include.list": "public.super_heroes,",
+         "plugin.name": "pgoutput",
+         "slot.name": "slotheroes",
+         "topic.prefix": "cdc-using-debezium-super-heroes"
+     }
+  }
+}
