@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-**🎉 Hacktoberfest Contribution**
+**🎉 Hacktoberfest 2025 Contribution**
 
 Welcome to our Hacktoberfest contribution! This template helps us understand your contribution and provide better guidance.
 
@@ -50,3 +50,4 @@ Feel free to ask any questions or let us know if you need guidance!
 
 **📝 Additional Notes**
 Any additional information that might help us assist you better.
+

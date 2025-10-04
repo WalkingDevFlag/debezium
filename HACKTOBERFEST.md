@@ -1,6 +1,22 @@
-# 🎉 Hacktoberfest 2024 - Debezium Real-Time Chat
+# 🎉 Hacktoberfest 2025 - Debezium Real-Time Chat
 
 Welcome to our Hacktoberfest contribution guide! This project is perfect for learning **Change Data Capture (CDC)**, **event-driven architecture**, and **real-time data streaming**.
+
+## 🏆 Hacktoberfest 2025 Rewards
+
+According to the [official Hacktoberfest 2025 page](https://hacktoberfest.com/participation/), here's what contributors can earn:
+
+- **🎖️ Digital Badges**: Unlock badges for each accepted PR via Holopin
+- **👕 Exclusive T-Shirts**: For "Super Contributors" who complete 6 accepted PRs (first 10,000 contributors)
+- **🌱 Tree Contributions**: Every 6th PR helps plant trees via TreeNation partnership
+- **📚 Learning Experience**: Hands-on practice with modern technologies
+
+## 📅 Important Dates for 2025
+
+- **📝 Registration Opens**: September 15, 2025
+- **🚀 Contribution Period**: October 1 - October 31, 2025
+- **🎯 Goal**: 6 high-quality accepted PRs
+- **📝 Registration Closes**: October 31, 2025
 
 ## 🎯 Why Contribute to This Project?
 
@@ -76,39 +92,52 @@ Welcome to our Hacktoberfest contribution guide! This project is perfect for lea
 - [ ] **Event Aggregation** - Aggregate multiple events
 - [ ] **Schema Evolution** - Handle database schema changes
 
-## 🚀 How to Contribute
+## 🚀 How to Contribute During Hacktoberfest 2025
 
-### 1. Fork the Repository
+### 1. Register for Hacktoberfest 2025
+- Visit [hacktoberfest.com](https://hacktoberfest.com/participation/)
+- Register between **September 15 - October 31, 2025**
+- Connect your GitHub/GitLab account
+
+### 2. Fork the Repository 
 ```bash
 git clone https://github.com/YOUR_USERNAME/debezium.git
 cd debezium
 ```
 
-### 2. Set Up Development Environment
+### 3. Set Up Development Environment
 ```bash
 make build
 make up
 ```
 
-### 3. Pick an Issue
+### 4. Pick an Issue (October 1-31, 2025)
 - Look through the issues above or check our [GitHub Issues](https://github.com/AndrGab/debezium/issues)
+- Look for issues labeled `hacktoberfest` or `good first issue`
 - Comment on the issue to claim it
 - Ask questions if you need clarification
 
-### 4. Create Your Branch
+### 5. Create Your Branch
 ```bash
 git checkout -b feature/your-feature-name
 ```
 
-### 5. Make Your Changes
+### 6. Make Your Changes
 - Follow our [Contributing Guidelines](CONTRIBUTING.md)
 - Write clean, documented code
 - Test your changes
+- Ensure your PR is created between **October 1-31, 2025**
 
-### 6. Submit Your PR
+### 7. Submit Your PR
 - Open a Pull Request with a clear description
 - Link to the issue you're solving
 - Include screenshots if applicable
+- **Important**: Make sure your PR is created during the contribution period!
+
+### 8. Wait for Review
+- All PRs go through a **7-day review period**
+- Maintainers will review and potentially merge your PR
+- Once accepted, it counts toward your 6 PR goal!
 
 ## 🎓 Learning Resources
 
@@ -129,9 +158,10 @@ git checkout -b feature/your-feature-name
 
 All valid contributors will be:
 - ✅ Listed in our contributors section
-- 🏆 Counted for Hacktoberfest 2024
+- 🏆 Counted for Hacktoberfest 2025
 - 📜 Given credit in our documentation
 - 🎉 Invited to our community discussions
+- 🎖️ Eligible for official Hacktoberfest 2025 rewards
 
 ## 💬 Need Help?
 
@@ -152,4 +182,6 @@ All valid contributors will be:
 
 **Happy Coding and Welcome to the Community! 🚀**
 
-Let's build something amazing together while learning about real-time data streaming and CDC!
+Let's build something amazing together while learning about real-time data streaming and CDC! 
+
+**Remember**: Your contributions help make the world a better place - both through open source and through the trees planted via TreeNation! 🌱

@@ -1,4 +1,4 @@
-# Hacktoberfest 2024 Configuration
+# Hacktoberfest 2025 Configuration
 # This file helps maintainers manage Hacktoberfest participation
 
 # Repository settings
@@ -95,3 +95,4 @@ recognition:
     - top_contributor_badge: true
     - maintainer_mention: true
     - community_highlight: true
+
