@@ -1,0 +1,90 @@
+name: 🎉 Hacktoberfest Helper
+
+on:
+  issues:
+    types: [opened, closed]
+  pull_request:
+    types: [opened, closed, merged]
+
+permissions:
+  issues: write
+  pull-requests: write
+  contents: read
+ 
+jobs:
+  hacktoberfest:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.login == github.repository_owner
+    
+    steps:
+    - name: 🎉 Add Hacktoberfest labels
+      if: github.event.action == 'opened' && contains(github.event.issue.title, '[HACKTOBERFEST]')
+      uses: actions/github-script@v6
+      with:
+        script: |
+          github.rest.issues.addLabels({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number,
+            labels: ['hacktoberfest', 'good first issue']
+          })
+          
+    - name: 🏆 Celebrate merged PRs
+      if: github.event.action == 'closed' && github.event.pull_request.merged == true
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const { owner, repo } = context.repo;
+          const { number } = context.payload.pull_request;
+          
+          // Try to add celebration comment, but don't fail if it doesn't work
+          try {
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: number,
+              body: `🎉 **Congratulations!** Your PR has been merged! 
+              
+              🏆 This counts towards your Hacktoberfest 2025 goals!
+              
+              Thank you for contributing to our CDC learning project! 🚀`
+            });
+            console.log('✅ Successfully added celebration comment');
+          } catch (error) {
+            console.log('⚠️ Could not add comment (this is normal for some repositories):', error.message);
+          }
+          
+    - name: 🏷️ Auto-label PRs
+      if: github.event.action == 'opened'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const title = context.payload.pull_request.title.toLowerCase();
+          const labels = [];
+          
+          if (title.includes('bug') || title.includes('fix')) {
+            labels.push('bug');
+          }
+          if (title.includes('feature') || title.includes('add')) {
+            labels.push('enhancement');
+          }
+          if (title.includes('doc')) {
+            labels.push('documentation');
+          }
+          if (title.includes('test')) {
+            labels.push('testing');
+          }
+          
+          if (labels.length > 0) {
+            try {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.pull_request.number,
+                labels: labels
+              });
+              console.log('✅ Successfully added labels:', labels);
+            } catch (error) {
+              console.log('⚠️ Could not add labels:', error.message);
+            }
+          }
