@@ -1,0 +1,97 @@
+# Hacktoberfest 2024 Configuration
+# This file helps maintainers manage Hacktoberfest participation
+
+# Repository settings
+name: Debezium Real-Time Chat - CDC Learning Project
+description: A real-time chat application demonstrating Change Data Capture (CDC) using Debezium, Kafka, and WebSockets. Perfect for learning event-driven architecture and real-time data streaming.
+
+# Hacktoberfest specific settings
+hacktoberfest:
+  # Enable Hacktoberfest participation
+  enabled: true
+  
+  # Repository topics/tags
+  topics:
+    - hacktoberfest
+    - debezium
+    - cdc
+    - change-data-capture
+    - kafka
+    - websockets
+    - fastapi
+    - real-time
+    - event-driven
+    - learning
+    - educational
+    - docker
+    - postgresql
+    - microservices
+  
+  # Preferred contribution types
+  contribution_types:
+    - code
+    - documentation
+    - design
+    - bug-reports
+    - feature-requests
+  
+  # Skill levels welcome
+  skill_levels:
+    - beginner
+    - intermediate
+    - advanced
+
+# Issue labels for Hacktoberfest
+labels:
+  hacktoberfest:
+    color: "ff6b35"
+    description: "Issues eligible for Hacktoberfest"
+  
+  good-first-issue:
+    color: "7057ff"
+    description: "Good for newcomers"
+  
+  help-wanted:
+    color: "008672"
+    description: "Extra attention is needed"
+
+# Contribution guidelines
+contribution_guidelines:
+  # Minimum PR requirements
+  min_requirements:
+    - valid_issue_association: true
+    - meaningful_description: true
+    - working_code: true
+    - follows_code_standards: true
+  
+  # What counts as valid contributions
+  valid_contributions:
+    - bug_fixes
+    - new_features
+    - documentation_improvements
+    - ui_ux_improvements
+    - test_additions
+    - code_optimizations
+    - educational_content
+  
+  # What doesn't count
+  invalid_contributions:
+    - spam
+    - duplicate_prs
+    - non_meaningful_changes
+    - whitespace_only
+    - generated_files
+
+# Recognition for contributors
+recognition:
+  # Automatic recognition
+  automatic:
+    - contributor_badge: true
+    - mention_in_readme: true
+    - hacktoberfest_count: true
+  
+  # Special recognition
+  special:
+    - top_contributor_badge: true
+    - maintainer_mention: true
+    - community_highlight: true
