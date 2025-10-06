@@ -286,6 +286,13 @@ The `/docs` directory contains:
 
 These documents provide helpful resources for configuring the application environment and understanding its capabilities.
 
+## 🌟 Contributors
+
+<a href="https://github.com/andrgab/medirepo/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=andrgab/medirepo" alt="Contributors">
+</a>
+
+
 ## License
 
 This project is licensed under the MIT License.
