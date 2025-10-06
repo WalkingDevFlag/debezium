@@ -288,8 +288,8 @@ These documents provide helpful resources for configuring the application enviro
 
 ## 🌟 Contributors
 
-<a href="https://github.com/andrgab/medirepo/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=andrgab/medirepo" alt="Contributors">
+<a href="https://github.com/andrgab/debezium/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=andrgab/debezium" alt="Contributors">
 </a>
 
 
